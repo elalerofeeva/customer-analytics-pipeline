@@ -1,4 +1,9 @@
+
+## Data flow
+База данных 
+
 # customer-analytics-pipeline
+
 
 Учебный проект для демонстрации базового инструментария AI/ML Engineer.
 
