@@ -10,6 +10,10 @@ OUTPUT_PATH = DATA_DIR / "customer_features.csv"
 
 
 def build_customer_features(orders_df: pd.DataFrame, customers_df: pd.DataFrame) -> pd.DataFrame:
+    """Build an aggregated customer feature table from paid orders."""
+
+
+def build_customer_features(orders_df: pd.DataFrame, customers_df: pd.DataFrame) -> pd.DataFrame:
     paid_orders = orders_df[orders_df["status"] == "paid"].copy()
 
     merged = paid_orders.merge(customers_df, on="customer_id", how="left")
